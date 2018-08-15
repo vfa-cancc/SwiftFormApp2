@@ -38,13 +38,13 @@ class Demo2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         ProgressHUD.show("Loading...")
         Mbaas.getAllData({ objects in
             self.arrData = objects!
-            self.lblResultCount.text = String(format: NSLocalizedString("All search results", comment: ""), UInt(self.arrData.count
-            ))
+            self.lblResultCount.text = String(format: NSLocalizedString("全件検索結果：%lu件", comment: ""), UInt(self.arrData.count))
             self.table.reloadData()
             ProgressHUD.dismiss()
+            print("全件検索成功")
         }, errorCallback: { error in
             ProgressHUD.dismiss()
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Data acquisition failed", comment: ""))
+            Utils.showAlert(self, title: "全件検索失敗", message: NSLocalizedString("データの取得に失敗しました", comment: ""))
             if let anError = error {
                 print("全件検索失敗：\(anError)")
             }
@@ -80,7 +80,7 @@ class Demo2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let obj = arrData[indexPath.row] as? NCMBObject
-        Utils.showAlert(self, title: "Alert", message: obj?.object(forKey: "contents") as? String)
+        Utils.showAlert(self, title: "お問い合わせ内容", message: obj?.object(forKey: "contents") as? String)
     }
     
     

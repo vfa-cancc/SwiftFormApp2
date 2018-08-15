@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // APIキーの設定とSDKの初期化
+        /***** APIキーの設定とSDKの初期化 *****/
         NCMB.setApplicationKey("YOUR_NCMB_APPLICATION_KEY", clientKey: "YOUR_NCMB_CLIENT_KEY")
         
         // keyboard support

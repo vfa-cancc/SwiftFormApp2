@@ -51,21 +51,23 @@ class Demo32ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let greater: Int = pickerGreaterThan.selectedRow(inComponent: 0) - 1
         let less: Int = pickerLessThan.selectedRow(inComponent: 0) - 1
         if greater == -1 || less == -1 {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("please fill in the value", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("未入力の項目があります", comment: ""))
         } else if greater >= less {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Value is invalid", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("値が不正です", comment: ""))
         } else {
             ProgressHUD.show("Loading...")
             Mbaas.getRangeSearchData(greater as NSNumber, ageLessThan: less as NSNumber, successCallback: { objects in
                 //検索成功時の処理
                 self.arrTbvData = objects!
-                self.lblResultCount.text = String(format: NSLocalizedString("Conditional search (range designation) result", comment: ""), UInt(self.arrTbvData.count))
+                self.lblResultCount.text = String(format: NSLocalizedString("条件検索(範囲指定)結果：%lu件", comment: ""), UInt(self.arrTbvData.count))
                 self.table.reloadData()
                 self.viewResultCount.isHidden = false
                 ProgressHUD.dismiss()
+                print("年齢検索成功")
             }, errorCallback: { error in
                 ProgressHUD.dismiss()
-                Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Data acquisition failed", comment: ""))
+                Utils.showAlert(self, title: "年齢検索失敗", message: NSLocalizedString("データの取得に失敗しました", comment: ""))
+                print("年齢検索失敗:\(String(describing: error!))")
             })
         }
     }
@@ -101,7 +103,7 @@ class Demo32ViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let obj = arrTbvData[indexPath.row] as? NCMBObject
-        Utils.showAlert(self, title: "Alert", message: (obj?.object(forKey: "contents") as! String))
+        Utils.showAlert(self, title: "お問い合わせ内容", message: (obj?.object(forKey: "contents") as! String))
     }
 
     

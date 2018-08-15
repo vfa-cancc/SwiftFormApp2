@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17378D1C20F8804F00843502 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17378D1B20F8804F00843502 /* Utils.swift */; };
-		17378D1F20F885B700843502 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17378D2120F885B700843502 /* Localizable.strings */; };
 		17378D2420F88DF800843502 /* Demo2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17378D2320F88DF800843502 /* Demo2ViewController.swift */; };
 		17378D2620F8924000843502 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17378D2520F8924000843502 /* DataTableViewCell.swift */; };
 		179D8AC920FC58E800F9BF1A /* Demo31ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D8AC820FC58E800F9BF1A /* Demo31ViewController.swift */; };
@@ -26,8 +25,6 @@
 
 /* Begin PBXFileReference section */
 		17378D1B20F8804F00843502 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		17378D2020F885B700843502 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		17378D2220F885F200843502 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		17378D2320F88DF800843502 /* Demo2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo2ViewController.swift; sourceTree = "<group>"; };
 		17378D2520F8924000843502 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		179D8AC820FC58E800F9BF1A /* Demo31ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo31ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +101,6 @@
 				17E87A1A20F7546100D21861 /* Assets.xcassets */,
 				17E87A1C20F7546100D21861 /* LaunchScreen.storyboard */,
 				17E87A1F20F7546100D21861 /* Info.plist */,
-				17378D2120F885B700843502 /* Localizable.strings */,
 			);
 			path = SwiftFormApp;
 			sourceTree = "<group>";
@@ -208,7 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E87A1E20F7546100D21861 /* LaunchScreen.storyboard in Resources */,
-				17378D1F20F885B700843502 /* Localizable.strings in Resources */,
 				17E87A1B20F7546100D21861 /* Assets.xcassets in Resources */,
 				17E87A1920F7546100D21861 /* Main.storyboard in Resources */,
 			);
@@ -282,15 +277,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		17378D2120F885B700843502 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17378D2020F885B700843502 /* en */,
-				17378D2220F885F200843502 /* ja */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		17E87A1720F7546100D21861 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

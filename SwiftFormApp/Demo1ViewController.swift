@@ -59,17 +59,17 @@ class Demo1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBAction func btnSaveClick(_ sender: Any) {
         // 入力チェック
         if ("" == txtName.text) {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Name is not entered", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("名前が入力されていません", comment: ""))
         } else if ("" == txtEmail.text) {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("E-mail address is not entered", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("メールアドレスが入力されていません", comment: ""))
         } else if pickerAge.selectedRow(inComponent: 0) == 0 {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Age has not been entered", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("年齢が入力されていません", comment: ""))
         } else if pickerPre.selectedRow(inComponent: 0) == 0 {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("State or province is not entered", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("都道府県が入力されていません", comment: ""))
         } else if ("" == txtTitle.text) {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Inquiry title has not been entered", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("問い合わせタイトル\nが入力されていません", comment: ""))
         } else if ("" == txtContents.text) {
-            Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Inquiry content is not entered", comment: ""))
+            Utils.showAlert(self, title: "確認", message: NSLocalizedString("問い合わせ内容が入力されていません", comment: ""))
             
         // データの保存
         } else {
@@ -80,14 +80,16 @@ class Demo1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             let age = pickerAge.selectedRow(inComponent: 0) - 1
             let title = txtTitle.text
             let contents = txtContents.text
-            Mbaas.saveData(name, email: email, age: age as NSNumber, prefecture: pre, title: title, contents: contents, errorCallback: { error in
+            Mbaas.saveData(name, email: email, age: age as NSNumber, prefecture: pre, title: title, contents: contents, callback: { error in
                 ProgressHUD.dismiss()
                 if error != nil {
                     //保存失敗
-                    Utils.showAlert(self, title: "Alert", message: NSLocalizedString("I failed to accept inquiries", comment: ""))
+                    Utils.showAlert(self, title: "保存失敗", message: NSLocalizedString("お問い合わせの受付に失敗しました", comment: ""))
+                    print("保存失敗:\(String(describing: error!))")
                 } else {
                     // 保存成功
-                    Utils.showAlert(self, title: "Alert", message: NSLocalizedString("Inquiries accepted", comment: ""))
+                    Utils.showAlert(self, title: "保存成功", message: NSLocalizedString("お問い合わせを受付ました", comment: ""))
+                    print("保存成功")
                 }
             })
         }

@@ -18,8 +18,10 @@
 		17E87A1920F7546100D21861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E87A1720F7546100D21861 /* Main.storyboard */; };
 		17E87A1B20F7546100D21861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E87A1A20F7546100D21861 /* Assets.xcassets */; };
 		17E87A1E20F7546100D21861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E87A1C20F7546100D21861 /* LaunchScreen.storyboard */; };
+		17E87A2C20F75ABA00D21861 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E87A2B20F75ABA00D21861 /* SWRevealViewController.m */; };
 		17E87A2E20F75CB600D21861 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E87A2D20F75CB600D21861 /* MenuViewController.swift */; };
 		17E87A3120F8645000D21861 /* Mbaas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E87A3020F8645000D21861 /* Mbaas.swift */; };
+		9204EE10086A2F2DC95E9778 /* Pods_SwiftFormApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2483E6F26473994357C2EEA0 /* Pods_SwiftFormApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +39,13 @@
 		17E87A1A20F7546100D21861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17E87A1D20F7546100D21861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17E87A1F20F7546100D21861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E87A2620F759FF00D21861 /* SwiftFormApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFormApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		17E87A2A20F75ABA00D21861 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		17E87A2B20F75ABA00D21861 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		17E87A2D20F75CB600D21861 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		17E87A3020F8645000D21861 /* Mbaas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mbaas.swift; sourceTree = "<group>"; };
+		17E87A3220F8655F00D21861 /* SwiftFormApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFormApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		2483E6F26473994357C2EEA0 /* Pods_SwiftFormApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFormApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF19C41B3DBFA74A3B44B62F /* Pods-SwiftFormApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFormApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFormApp/Pods-SwiftFormApp.release.xcconfig"; sourceTree = "<group>"; };
 		EB9FEA62B11644BFD8CB5466 /* Pods-SwiftFormApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFormApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFormApp/Pods-SwiftFormApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9204EE10086A2F2DC95E9778 /* Pods_SwiftFormApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +76,7 @@
 				17E87A1220F7546100D21861 /* SwiftFormApp */,
 				17E87A1120F7546100D21861 /* Products */,
 				741BE7B2B8970C15128AC64D /* Pods */,
+				D3898B5AA7E6D183E0F67594 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +93,7 @@
 			children = (
 				17E87A2F20F8644000D21861 /* Mbaas */,
 				17378D1A20F8803400843502 /* Utility */,
+				17E87A2520F7595E00D21861 /* SWRevealViewController */,
 				17E87A1320F7546100D21861 /* AppDelegate.swift */,
 				17E87A2D20F75CB600D21861 /* MenuViewController.swift */,
 				17E87A1520F7546100D21861 /* Demo1ViewController.swift */,
@@ -95,9 +105,20 @@
 				17E87A1A20F7546100D21861 /* Assets.xcassets */,
 				17E87A1C20F7546100D21861 /* LaunchScreen.storyboard */,
 				17E87A1F20F7546100D21861 /* Info.plist */,
+				17E87A3220F8655F00D21861 /* SwiftFormApp-Bridging-Header.h */,
 				17378D2120F885B700843502 /* Localizable.strings */,
 			);
 			path = SwiftFormApp;
+			sourceTree = "<group>";
+		};
+		17E87A2520F7595E00D21861 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17E87A2A20F75ABA00D21861 /* SWRevealViewController.h */,
+				17E87A2B20F75ABA00D21861 /* SWRevealViewController.m */,
+				17E87A2620F759FF00D21861 /* SwiftFormApp-Bridging-Header.h */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		17E87A2F20F8644000D21861 /* Mbaas */ = {
@@ -115,6 +136,14 @@
 				BF19C41B3DBFA74A3B44B62F /* Pods-SwiftFormApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3898B5AA7E6D183E0F67594 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2483E6F26473994357C2EEA0 /* Pods_SwiftFormApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +273,7 @@
 				179D8ACB20FC7A5C00F9BF1A /* Demo32ViewController.swift in Sources */,
 				17E87A1620F7546100D21861 /* Demo1ViewController.swift in Sources */,
 				17E87A1420F7546100D21861 /* AppDelegate.swift in Sources */,
+				17E87A2C20F75ABA00D21861 /* SWRevealViewController.m in Sources */,
 				17E87A2E20F75CB600D21861 /* MenuViewController.swift in Sources */,
 				17E87A3120F8645000D21861 /* Mbaas.swift in Sources */,
 				17378D1C20F8804F00843502 /* Utils.swift in Sources */,
@@ -400,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 93WJ9RBTRU;
 				INFOPLIST_FILE = SwiftFormApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 93WJ9RBTRU;
 				INFOPLIST_FILE = SwiftFormApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -256,7 +256,7 @@ __http://bit.ly/natsumo_SwiftFormApp2__
 
 * zipファイルを解凍して内容を確認します
 
-.center[<img src="document-img/SwiftFormApp_project.PNG" alt="SwiftFormApp_project" width="550px">]
+.center[<img src="document-img/SwiftFormApp_project.png" alt="SwiftFormApp_project" width="550px">]
 
 ---
 .footnote_right[
@@ -273,7 +273,7 @@ Xcode プロジェクト「SwiftFormApp.xcodeproj」はまだ起動しないで�
 * mobile backend を使うための iOS SDK を導入していきます
 * ターミナルを開きます
 
-.center[<img src="document-img/terminal_icon.PNG" alt="terminal_icon" width="100px">]
+.center[<img src="document-img/terminal_icon.png" alt="terminal_icon" width="100px">]
 
 ---
 .footnote_right[
@@ -395,7 +395,7 @@ end
 * 作成された Xcode プロジェクト「SwiftFormApp.xcworkspace」をダブルクリックします
 * Xcode が起動し、プロジェクトが開かれます
 
-.center[<img src="document-img/open_Xcode.PNG" alt="open_Xcode" width="500px">]
+.center[<img src="document-img/open_Xcode.png" alt="open_Xcode" width="500px">]
 
 .size_small_7[.color_red[__注意__]<br>青いアイコンの「SwiftFormApp.xcodeproj」からXcodeを起動しても動作しません。<br>必ず白いアイコンの「SwiftFormApp.xcworkspace」から起動してください。]
 
@@ -409,7 +409,7 @@ end
 
 * `AppDelegate.swift` を開きます
 
-.center[<img src="document-img/where_AppDelegate_file.PNG" alt="where_AppDelegate_file" width="300px">]
+.center[<img src="document-img/where_AppDelegate_file.png" alt="where_AppDelegate_file" width="300px">]
 
 ---
 .footnote_right[
@@ -421,7 +421,7 @@ end
 
 * `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` を mobile backend でアプリ作成時に発行された２つの APIキー （アプリケーションキーとクライアントキー）に貼り替えます
 
-.center[<img src="document-img/setting_API_Key.PNG" alt="setting_API_Key" width="750px">]
+.center[<img src="document-img/setting_API_Key.png" alt="setting_API_Key" width="750px">]
 
 ---
 .footnote_right[

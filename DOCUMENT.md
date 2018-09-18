@@ -382,7 +382,7 @@ end
 #### SDK のインストール
 * Xcode プロジェクト「SwiftFormApp.xcworkspace」が作成されます
 
-.center[<img src="document-img/create_workspace.PNG" alt="terminalcreate_workspace_icon" width="450px">]
+.center[<img src="document-img/create_workspace.png" alt="terminalcreate_workspace_icon" width="450px">]
 
 ---
 .footnote_right[

@@ -1185,6 +1185,9 @@ query?.countObjectsInBackground({ (number, error) in
 ハンズオン<br>5. おまけ
 ]
 ]
+
+### その他 mobile backend でできること
+#### データストアの機能
 * **ポインタ・リレーション**
   * データ同士を関連付けすることができます
 * **参照権限（ACL）**

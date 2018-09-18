@@ -6,7 +6,7 @@ target 'SwiftFormApp' do
   use_frameworks!
 
   # Pods for SwiftFormApp
-  pod 'NCMB', :git => 'https://github.com/NIFTYCloud-mbaas/ncmb_ios.git'
+  pod 'NCMB', :git => 'https://github.com/NIFCloud-mbaas/ncmb_ios.git'
   pod 'UITextView+Placeholder'
   pod 'ProgressHUD'
   pod 'IQKeyboardManagerSwift'

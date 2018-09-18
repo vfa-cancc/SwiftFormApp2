@@ -559,6 +559,9 @@ object?.saveInBackground({error in
 
 `.saveInBackground()` : データの保存処理
 
+* 書き換えたら必ず保存をしましょう
+  * `command + S` キーで保存できます
+
 ---
 .footnote_right[
 .right[
@@ -686,6 +689,9 @@ query?.findObjectsInBackground({ objects, error in
 ```
 
 `.findObjectsInBackground()` : 検索取得処理
+
+* 書き換えたら必ず保存をしましょう
+  * `command + S` キーで保存できます
 
 ---
 .footnote_right[
@@ -899,6 +905,8 @@ query?.findObjectsInBackground({ objects, error in
 ```
 
 * 条件設定が異なるだけで検索の仕方は同様です
+* 書き換えたら必ず保存をしましょう
+  * `command + S` キーで保存できます
 
 ---
 .footnote_right[
@@ -1086,8 +1094,11 @@ query?.findObjectsInBackground({ objects, error in
         // 検索成功時の処理
         successCallback(objects)
     }
-}
+})
 ```
+
+* 書き換えたら必ず保存をしましょう
+  * `command + S` キーで保存できます
 
 ---
 .footnote_right[

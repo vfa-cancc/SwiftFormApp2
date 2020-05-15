@@ -117,6 +117,12 @@ layout: false
   * https://mbaas.nifcloud.com/signup.htm
   * SNS ID でアカウントを取得してください
 
+## 動作環境
+* Xcode ver 11.3.1
+* iPhone 7 ver 13.3
+* Android Sutdio ver 3.6.1
+* Android OS ver 9.0
+
 ---
 .footnote_right[
 .right[
